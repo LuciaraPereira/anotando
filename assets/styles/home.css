@@ -1,0 +1,22 @@
+.criacao{
+   margin-top: 1rem;
+}
+
+body{
+    background-color: #fff;
+    height: 100vh; 
+}
+
+.main-home{
+    top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+
+
+#mostra-form{
+    display: none;
+}

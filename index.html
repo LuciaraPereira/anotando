@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+       <div class="logo">
+            <p><a href="index.html">ANOTANDO</a></p>
+       </div>
+        <nav>
+           <ul>
+            <li> <button class="loginBtn btns-inicio">Login</button></li>
+            <li> <button class="cadastroBtn btns-inicio">Cadastre-se</button> </li>
+           </ul>
+        </nav>
+    </header>
+
+    <main class="entradas">
+
+        <section class="container-principal">
+
+            <div class="imagem-inicio">
+                <img src="assets/imagens/imageminicio.png" alt="">
+            </div>
+            <div class="slogan">
+                <h1>Toda grande ideia começa <span class="efeito">ANOTANDO</span></h1>
+                <p>E o primeiro passo para realizar é escrever o que se sonha!</p>
+                <button class="btn-comecar"> Comece a anotar aqui!</button>
+            </div>
+            
+
+            <!-- <section class="btns-inicio">
+                <button class="loginBtn">Login</button>
+                <button class="cadastroBtn">Cadastre-se</button>
+            </section> -->
+        </section>
+
+       
+
+        <section class="login login-cadastro hide"  >
+            <button class="btn-cancelar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+            </button>
+            <p class="p-l-c"> Faça seu login</p>
+            <form>
+                <input type="email" placeholder="E-mail" id="email-login" required>
+                <input type="password" placeholder="Senha" id="senha-login" required minlength="8">
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section class="cadastro login-cadastro hide" id="cadastro">
+            <button class="btn-cancelar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+            </button>
+             <p class="p-l-c"> Faça seu Cadastro</p>
+            <form>
+                <input type="text" placeholder="Nome" id="nome-cadastro" required>
+                <input type="email" placeholder="E-mail" id="email-cadastro" required>
+                <input type="password" placeholder="Senha" id="senha-cadastro" minlength="8" required>
+                <input type="password" placeholder="confirme sua senha" id="confirme-senha" minlength="8" required>
+
+                <button type="submit" id="cadastro-realizado">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">Suporte</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">@2025-Anotando</a>
+    </footer>
+</body>
+</html>

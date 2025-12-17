@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="stylesheet" href="assets/styles/home.css">
+    <script src="../scripts/home.js" defer></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/home.css">
     <title>Anotando</title>
 </head>
 <body>
@@ -14,24 +15,75 @@
        </div>
         <nav>
            <ul>
-            <li> <button class="loginBtn btns-inicio">Sair</button></li>
+            <li> <a href="../../index.html" class="btn-sair">Sair</a></li>
            </ul>
         </nav>
     </header>
 
-    <main class="main-home">
-        <section class="criacao">
-             <button id="criar-anotacao">Criar nova anotação</button>
-           
-
-            <div id="mostra-form">
-                <form id="criar-anotacao">
+    <main id="main-home">
+       <section id="container-criar"> 
+            <button id="btn-criar-anotacao">Criar nova anotação</button> 
+            <div id="mostra-form" class="hide"> 
+                <form id="form-criar-anotacao"> 
                     <input type="text" placeholder="Título">
-                    <input type="text" id="descricao">
-                    <button type="submit" id="enviar">Enviar</button>
-                </form>
+                    <textarea id="descricao" rows="10" cols="30"></textarea>
+                    <button type="submit" id="enviar">Enviar</button> 
+                </form> 
             </div> 
-        </section>
+       </section>
+
+       <section id="anotacoes-feitas">
+        <h1>Suas notas</h1>
+        <div class="container-notas">
+            <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sed obcaecati eum quaerat omnis velit, enim optio praesentium alias ab facere illum voluptas et mollitia soluta, in blanditiis temporibus veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste officiis earum, nobis iusto voluptatem obcaecati, fugiat qui pariatur quo consequuntur vitae blanditiis voluptatibus esse, voluptas eveniet. Nisi ipsum nulla laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet perferendis nemo incidunt labore veniam expedita sint. Earum quasi, voluptatum eligendi ratione et, illo ipsum aspernatur iste incidunt quod rerum.</p>
+            </div>
+
+             <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+             <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error. a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, err</p>
+            </div>
+
+             <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+               <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+               <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+            <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+            <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+            <div class="card-nota">
+                <h2 class="titulo-anotacao"> ola</h2>
+                <p class="descricao-anotacao">a porro perferendis inventore amet repudiandae quaerat vero aut quae, earum veritatis sit. Voluptate, error.</p>
+            </div>
+
+        </div>
+        
+
+       </section>
     </main>
 
      <footer>

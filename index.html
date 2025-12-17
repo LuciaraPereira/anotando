@@ -29,7 +29,7 @@
                 <img src="assets/imagens/imageminicio.png" alt="">
             </div>
             <div class="slogan">
-                <h1>Toda grande ideia começa <span class="efeito">ANOTANDO</span></h1>
+                <h1>Toda grande ideia começa <span class="efeito">ANOTANDO</span>.</h1>
                 <p>E o primeiro passo para realizar é escrever o que se sonha!</p>
                 <button class="btn-comecar"> Comece a anotar aqui!</button>
             </div>
@@ -51,7 +51,7 @@
                     </svg>
             </button>
             <p class="p-l-c"> Faça seu login</p>
-            <form>
+            <form id="form-login">
                 <input type="email" placeholder="E-mail" id="email-login" required>
                 <input type="password" placeholder="Senha" id="senha-login" required minlength="8">
 
@@ -67,13 +67,15 @@
                     </svg>
             </button>
              <p class="p-l-c"> Faça seu Cadastro</p>
-            <form>
+            <form id="form-cadastro">
                 <input type="text" placeholder="Nome" id="nome-cadastro" required>
                 <input type="email" placeholder="E-mail" id="email-cadastro" required>
-                <input type="password" placeholder="Senha" id="senha-cadastro" minlength="8" required>
-                <input type="password" placeholder="confirme sua senha" id="confirme-senha" minlength="8" required>
+                <input type="password" placeholder="Senha" id="senha-cadastro" minlength="3" required>
+                <input type="password" placeholder="confirme sua senha" id="confirme-senha" minlength="3" required>
 
                 <button type="submit" id="cadastro-realizado">Cadastrar</button>
+
+                <p id=" hide"></p>
             </form>
         </section>
     </main>

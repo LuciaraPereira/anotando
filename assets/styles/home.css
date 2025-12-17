@@ -1,22 +1,76 @@
-.criacao{
-   margin-top: 1rem;
+#main-home{
+    display: flex;
+    flex: 1;
+    padding-top: 120px; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-body{
-    background-color: #fff;
-    height: 100vh; 
+#container-criar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
 }
 
-.main-home{
-    top: 180px;
+#form-criar-anotacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+
+#form-criar-anotacao input{
+    width: 15rem; 
+    height: 1.5rem;
+}
+
+#btn-criar-anotacao, #enviar{
+    background-color: #053485;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#anotacoes-feitas{
+    border-top: 1px solid #032c74c1;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container-notas{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-   
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1.3rem;
 }
 
+.card-nota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    min-height: 230px;
+    max-height: 230px;
+    background-color: #a1d0fc;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden; 
+}
 
-#mostra-form{
-    display: none;
+.descricao-anotacao{
+    padding: 1rem;
+    max-height: 200px;
+    overflow-y: auto; 
 }

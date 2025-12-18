@@ -48,8 +48,3 @@ entrarCadastro.addEventListener("submit", evt =>{
     formcadastro.classList.add("hide");
     containerPrincipal.classList.add("hide")
 })
-
-
-function adicionarNota(){
-    
-}

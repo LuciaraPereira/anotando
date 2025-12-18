@@ -1,7 +1,7 @@
 #main-home{
     display: flex;
     flex: 1;
-    padding-top: 120px; 
+    padding-top: 120px;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,9 @@
     width: 100%;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
+    max-height: 31.25rem;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .container-notas{
@@ -73,4 +76,5 @@
     padding: 1rem;
     max-height: 200px;
     overflow-y: auto; 
+    overflow-x: hidden;
 }

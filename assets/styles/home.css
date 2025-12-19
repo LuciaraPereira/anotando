@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin-top: 50px;
     gap: 20px;
 }
 
@@ -44,7 +44,7 @@
     padding: 1rem;
     width: 100%;
     margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5.5rem;
     max-height: 31.25rem;
     overflow-y: auto;
     overflow-x: hidden;
@@ -64,12 +64,14 @@
     flex-direction: column;
     justify-content: center;
     max-width: 300px;
+    width: 100%;
     min-height: 230px;
     max-height: 230px;
     background-color: #a1d0fc;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    overflow: hidden; 
+    overflow: hidden;
+    position: relative; 
 }
 
 .descricao-anotacao{
@@ -77,4 +79,24 @@
     max-height: 200px;
     overflow-y: auto; 
     overflow-x: hidden;
+}
+
+.titulo-anotacao {
+    max-width: 75%;
+    overflow-wrap: break-word;
+}
+.divAcoes{
+    display: flex;
+    gap: 0.7rem;
+    color: #032d74;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0.4rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.divAcoes i:hover{
+    color: #01112c;
 }

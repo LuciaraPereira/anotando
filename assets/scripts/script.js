@@ -43,6 +43,7 @@ entrarLogin.addEventListener("submit", evt =>{
 
 let entrarCadastro = document.querySelector("#form-cadastro")
 entrarCadastro.addEventListener("submit", evt =>{
+    evt.preventDefault(); 
     alert("Cadastrado com sucesso, faça seu login!")
     formLogin.classList.remove("hide");
     formcadastro.classList.add("hide");

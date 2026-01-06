@@ -4,13 +4,14 @@
     --cor-principal: #CCCCCC;
     --cor-secundaria: #032d74;
     --botoes-principais: #f0eded; 
+    --hover-botoes-principais: #235ec5;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'IBM Plex Sans', Courier, monospace;
     font-weight: 700;
     list-style: none;
 }
@@ -66,14 +67,6 @@ header{
     width: 100%;
 }
 
-.logo a:active{
-    color: var(--cor-secundaria);
-}
-
-.logo a:visited{
-    color: var(--cor-secundaria);
-}
-
 nav ul{
     display: flex; 
     align-items: center;
@@ -89,33 +82,31 @@ li button{
     cursor: pointer;
     padding: 13px 10px;
     border-radius: 14px;
-    font-weight: 800;
+    font-weight: bold;
     position: relative;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 a.btn-sair{
     border: none;
-    background-color: var(--botoes-principais);
+    background-color:var(--botoes-principais);
     color: var(--cor-secundaria);
     font-size: 1rem;
     cursor: pointer;
     padding: 13px 10px;
     border-radius: 14px;
-    font-weight: 800;
+    font-weight: bold;
     position: relative;
-    transition: 0.5s;
+    transition: 0.4s;
     text-decoration: none;
 }
 
 a.btn-sair:hover{
-    color: var(--cor-principal);
-    background-color: var(--cor-secundaria);
+    color: var(--hover-botoes-principais);
 }
 
 li button:hover{
-    color: var(--cor-principal);
-    background-color: var(--cor-secundaria);
+    color:  var(--hover-botoes-principais);
 }
 
 .entradas{
@@ -143,16 +134,27 @@ li button:hover{
     color: var(--cor-secundaria);
 }
 
-.btn-comecar{
+.btn-comecar {
     border: none;
     background-color: transparent;
-    color: #032d74;
+    color: var(--cor-secundaria);
     font-size: 19px;
     cursor: pointer;
+    position: relative;
 }
 
-.btn-comecar:hover{
-    color: #54A5E6;
+.btn-comecar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #1465BB;
+    transition: width 0.5s ease;
+    margin-top: 1px;
+}
+
+.btn-comecar:hover::after {
+    width: 100%;
 }
 
 
@@ -195,20 +197,25 @@ li button:hover{
     font-weight: bold;
 }
 
-.login-cadastro button{
+.login-cadastro button.btn-lc{
     width: 200px;
     height: 35px;
     border-radius: 8px;
-    background-color: var(--cor-principal);
+    background-color: var(--botoes-principais);
     border: none;
     color: var(--cor-secundaria);
     margin: 0 auto;
     cursor: pointer;
 }
 
+.login-cadastro button.btn-lc:hover{
+    background-color: #dbdbdb;
+}
+
+
 .login-cadastro  .btn-cancelar{
    position: absolute;
-    top: 0;  /* ajusta a posição conforme quiser */
+    top: 0; 
     right: 0;
     width: 50px;
     height: 50px;
@@ -216,6 +223,10 @@ li button:hover{
     background: transparent;
     border: none;
     cursor: pointer;
+}
+
+.login-cadastro  .btn-cancelar:hover{
+  color: #dbdbdb;
 }
 
 #container_aviso{
@@ -228,15 +239,12 @@ li button:hover{
     right: 30%;
 }
 
-
-
 .hide{
     display: none;
 }
 
-
 footer{
-    background-color: #032d74;
+    background-color: var(--cor-secundaria);
     width: 100%;
     display: flex;
     align-items: center;
@@ -250,6 +258,10 @@ footer{
 footer a{
     color: var(--botoes-principais);
     text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--cor-principal);
 }
 
 

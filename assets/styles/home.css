@@ -37,6 +37,11 @@
     color: #fff;
     cursor: pointer;
     border: none;
+    transition: 0.5s;
+}
+
+#btn-criar-anotacao:hover, #enviar:hover{
+    background-color: #1465BB;
 }
 
 #anotacoes-feitas{

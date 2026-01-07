@@ -12,13 +12,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'IBM Plex Sans', Courier, monospace;
-    font-weight: 700;
+    font-weight: 400;
     list-style: none;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 body{
     background-color: #fff;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +39,7 @@ header{
     padding: 5px 50px;
     z-index: 100;
 }
+
 
 .logo a{
     font-size: 25px;
@@ -109,14 +114,16 @@ li button:hover{
     color:  var(--hover-botoes-principais);
 }
 
-.entradas{
+main.entradas{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex: 1;
-    padding-top: 100px; 
-    padding-bottom: 80px;
+    padding-top: 120px;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 4rem;
 }
 
 .container-principal{
@@ -181,11 +188,13 @@ li button:hover{
 
 .login-cadastro input{
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 35px;
     border-radius: 8px;
     background-color: var(--botoes-principais); 
     border: none;
+    font-size: 16px;
 }
 
 .login-cadastro input::placeholder{
@@ -244,15 +253,17 @@ li button:hover{
 }
 
 footer{
+    margin-top: auto;
     background-color: var(--cor-secundaria);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 14px 50px;
     flex-wrap: wrap;
     position: fixed;
     bottom: 0;
+    gap: 1rem;
 }
 
 footer a{
@@ -264,13 +275,25 @@ footer a:hover{
     color: var(--cor-principal);
 }
 
+.imagem-inicio img{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
 
 
 @media (max-width: 768px) {
+
+    .logo img {
+        max-width: 200px;
+        margin: 0;
+    }
+
     header{
         flex-direction: column;
         row-gap: 10px;
-        padding: 1.3rem 1.5rem;
+        padding: 0.7rem 1rem;
     }
 
       nav ul{
@@ -279,7 +302,24 @@ footer a:hover{
         align-items: center;
     }
     
-    .entradas{
-          padding-top: 50%; 
+    main.entradas,
+    #main-home {
+        margin-top: 70px;
+        margin-bottom: 90px;
     }
+
+    footer{
+        padding: 14px 1rem;
+        row-gap: 10px;
+    }
+
+    li button{
+        padding: 10px 8px;
+        border-radius: 12px;
+    }
+
+    .login-cadastro  .btn-cancelar{
+        padding-left: 14px;
+    }
+
 }

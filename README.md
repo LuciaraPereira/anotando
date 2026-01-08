@@ -1,3 +1,9 @@
+## 📝 Anotando
+
+Este projeto foi desenvolvido com o objetivo de **praticar os conhecimentos adquiridos** em HTML, CSS e JavaScript, permitindo aplicar o aprendizado **na prática** por meio da criação de um site de anotações.
+
+Atualmente, a aplicação apresenta apenas o front-end, servindo como um projeto de estudo e evolução contínua no desenvolvimento web. Segue abaixo as telas:
+
 ## 📸 Telas Desktop
 
 ### Página Inicial
@@ -26,4 +32,14 @@
   <img src="https://github.com/user-attachments/assets/8b1e6095-829c-4cf6-bd10-b05d5fc5b132" width="170"/>
   <img src="https://github.com/user-attachments/assets/2673b652-c1ee-4907-a8d3-6416103257ab" width="170"/>
 </p>
+
+### 🎯 Objetivos do projeto
+- Praticar HTML, CSS e JavaScript;
+- Desenvolver layouts responsivos;
+- Aplicar conceitos de organização de código.
+
+### 🛠️ Tecnologias utilizadas
+- HTML5  
+- CSS3  
+- JavaScript  
 

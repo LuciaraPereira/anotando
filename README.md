@@ -21,6 +21,16 @@ Atualmente, a aplicação apresenta apenas o front-end, servindo como um projeto
   <img src="https://github.com/user-attachments/assets/9c2b7ad5-99b0-43ef-98ba-c5525329d187" width="700"/>
 </p>
 
+### Página Criar Notas
+<p align="center">
+ <img  src="https://github.com/user-attachments/assets/f8e92505-445b-4081-93b2-0d6ab4f44e71" width="700" />
+</p>
+
+### Notas Criadas
+<p align="center">
+ <img  src="https://github.com/user-attachments/assets/c84cb371-bc70-4f78-a20d-b1a2c3c365a5" width="700" />
+</p>
+
 ---
 
 ## 📱 Telas Mobile

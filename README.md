@@ -53,3 +53,4 @@ Atualmente, a aplicação apresenta apenas o front-end, servindo como um projeto
 - CSS3  
 - JavaScript  
 
+🚧 **Status:** Projeto em desenvolvimento (front-end).

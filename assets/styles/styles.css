@@ -40,19 +40,11 @@ header{
     z-index: 100;
 }
 
-
-.logo a{
-    font-size: 25px;
-    font-weight: 900;
-    text-decoration: none;
-    text-shadow: 0 0 10px #0e024799;
-}
-
 .logo img{
-    max-width: 300px;
+    max-width: 150px;
     width: 100%;
     height: auto;
-    margin: -30px 0px -30px 0px;
+    margin: 0.5rem;
 }
 
 
@@ -104,6 +96,7 @@ a.btn-sair{
     position: relative;
     transition: 0.4s;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 a.btn-sair:hover{
@@ -117,7 +110,7 @@ li button:hover{
 main.entradas{
     display: flex;
     flex: 1;
-    padding-top: 120px;  
+    padding-top: 100px;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -293,7 +286,7 @@ footer a:hover{
     header{
         flex-direction: column;
         row-gap: 10px;
-        padding: 0.7rem 1rem;
+        padding:20px;
     }
 
       nav ul{
@@ -304,7 +297,7 @@ footer a:hover{
     
     main.entradas,
     #main-home {
-        margin-top: 70px;
+        margin-top: 15px;
         margin-bottom: 90px;
     }
 

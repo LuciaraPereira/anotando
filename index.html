@@ -12,7 +12,7 @@
 
     <header>
        <div class="logo">
-            <a href="index.html"><img src="assets/imagens/logo-anotando.png" alt=""></a>
+            <a href="index.html"><img src="assets/imagens/logo-anotando.png" alt="Logo Anotando, contém o nome anotando e o logotipo, uma nuvem interligada com pastas simulando anotações."></a>
        </div>
         <nav>
            <ul>
@@ -36,38 +36,44 @@
         </section>
 
         <section class="login login-cadastro hide"  >
-            <button class="btn-cancelar">
+            <button class="btn-cancelar" aria-label="Voltar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                     </svg>
             </button>
-            <p class="p-l-c"> Faça seu login</p>
+            <h2 class="p-l-c"> Faça seu login</h2>
             <form id="form-login">
-                <input type="email" placeholder="E-mail" id="email-login" required>
-                <input type="password" placeholder="Senha" id="senha-login" required minlength="8">
+                <label for="email-login" class="oculta-label">E-mail</label>
+                <input type="email" placeholder="E-mail" id="email-login" required title="E-mail">
+                <label for="senha-login" class="oculta-label">Senha</label>
+                <input type="password" placeholder="Senha" id="senha-login" required minlength="8" title="Senha">
 
                 <button type="submit" class="btn-lc">Entrar</button>
             </form>
         </section>
 
         <section class="cadastro login-cadastro hide" id="cadastro">
-            <button class="btn-cancelar">
+            <button class="btn-cancelar" aria-label="Voltar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                     </svg>
             </button>
-             <p class="p-l-c"> Faça seu Cadastro</p>
+             <h2 class="p-l-c"> Faça seu Cadastro</h2>
             <form id="form-cadastro">
-                <input type="text" placeholder="Nome" id="nome-cadastro" required>
-                <input type="email" placeholder="E-mail" id="email-cadastro" required>
-                <input type="password" placeholder="Senha" id="senha-cadastro" minlength="3" required>
-                <input type="password" placeholder="confirme sua senha" id="confirme-senha" minlength="3" required>
+                <label for="nome-cadastro" class="oculta-label">Nome</label>
+                <input  type="text" placeholder="Nome" id="nome-cadastro" required title="Nome">
+                <label for="email-cadastro" class="oculta-label">E-mail</label>
+                <input type="email" placeholder="E-mail" id="email-cadastro" required title="E-mail">
+                <label for="senha-cadastro" class="oculta-label">Senha</label>
+                <input type="password" placeholder="Senha" id="senha-cadastro" minlength="3" required title="Senha">
+                <label for="confirme-senha" class="oculta-label">Confirme sua senha</label>
+                <input type="password" placeholder="confirme sua senha" id="confirme-senha" minlength="3" required title="confirme-senha">
 
                 <button type="submit" id="cadastro-realizado" class="btn-lc">Cadastrar</button>
 
-                <p id=" hide"></p>
+                <p id="hide"></p>
             </form>
         </section>
     </main>
